@@ -1,54 +1,107 @@
+body:before {
+    content: "";
+    position: fixed;
+    inset: -50px;
+
+    background:
+     repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%)
+      60% 60%/3000px 3000px,
+     repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%)
+      40% 40%/4000px 3000px;
+
+    background-blend-mode: difference;
+    filter: blur(2px) contrast(100) brightness(40);
+    mix-blend-mode: lighten;
+}
+ 
+body {
+    background: #00DFFC;
+    margin: 0;
+    min-height: 100vh;
+}
+ 
+html {
+    background: #fff;
+}
+
 #majorInfo {
     position: absolute;
     right: 500px;
+    top: 75px;
     width: 500px;
     padding: 8px;
-    border: 3px solid red;
+    border: 5px solid blue;
+    background-color: darkblue;
+    color: white;
 }
 
 #imgBox {
-    border: 3px solid blue;
+    border: 5px solid blue;
     position: absolute;
     left: 20px;
+    top: 75px;
     width: 400px;
-    height: 300px;
+    height: 350px;
     padding: 8px;
 }
 
 #linkDiv {
-    border: 3px solid green;
+    border: 5px solid blue;
+    background-color: darkblue;
+    color: white;
     position: absolute;
-    top: 400px;
+    top: 450px;
     left: 20px;
     width: 400px;
     height: 400px;
     padding: 8px;
 }
 
+#picOfMe {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 336px;
+    width: 386px;
+}
+
 .card {
     position: absolute;
     right: 20px;
+    top: 75px;
 }
 
-.card-title, .card-text {
-    color: rgb(246, 255, 0);
+.musicListItems {
+    font-size: 20px;
+    color: red;
 }
 
 .card-title {
-    position: absolute;
-    bottom: 95px;
-    right: 150px;
+    position: relative;
+    top: 20px;
+    text-align: center;
+    color: black;
 }
 
-.card-text {
-    position: absolute;
-    bottom: 75px;
-    right: 130px;
-    font-size: 15px;
+#cardSubTitle {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
 }
 
 .cardbtn {
     position: absolute;
-    bottom: 50px;
+    bottom: 60px;
     right: 130px;
+}
+
+.hobbiesList {
+    font-size: 20px;
+    color: red;
+}
+
+.card-img-top {
+    height: 600px;
 }

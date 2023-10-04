@@ -13,20 +13,18 @@
 
 <!-- Nav Bar -->
 
-
-
-    <nav class="navbar navbar-expand-sm navbar-light bg-warning" id="navbar">
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary" id="navbar">
       <a href="#" class="navbar-brand mb-0 h1"> Navbar </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a href="#" class="nav-link active"> Home </a>
+            <a href="#" class="nav-link"> GitHub </a>
           </li>
           <li class="nav-item active">
-            <a href="#" class="nav-link"> Skills </a>
+            <a href="#" class="nav-link"> See The Code </a>
           </li>
           <li class="nav-item active">
-            <a href="#" class="nav-link"> Facts </a>
+            <a href="#" class="nav-link"> Check the pages validity </a>
           </li>
         </ul>
       </div>
@@ -37,7 +35,7 @@
 
 
   <div id="imgBox">
-    <h2>Might put a pic here</h2>
+    <img id="picOfMe" src="img/pictureOfMe.jpg" alt="A Picture of Me">
   </div>
 
   <div id="majorInfo">
@@ -67,15 +65,51 @@
     </p>
   </div>
 
-  <div id="linkDiv">
-    <h5>This is where I am going to put all of my links.</h5>
+  <!-- Div With all of my links inside of them. -->
+  <div id="linkDiv" class="offset-md-2 col-md-8 mx-auto text-center">
+    <h2>Links to My Stuff</h2>
+    <a href="#" class="btn btn-warning">GitHub</a>
+    <a href="#" class="btn btn-warning">CodePen</a>
+    <a href="#" class="btn btn-warning">LinkedIn</a>
+    <br>
+    <br>
+
+    <h2>Links to My Projects</h2>
+    <a href="#" class="btn btn-warning">Alpha</a>
+    <a href="#" class="btn btn-warning">Beta</a>
+    <a href="#" class="btn btn-warning">Charlie</a>
+    <a href="#" class="btn btn-warning">Delta</a>
+    <a href="#" class="btn btn-warning">Echo</a>
+
   </div>
+  <!-- BootStrap Card -->
   <div class="card" style="width:400px;">
-    <img class="card-img-top" src="img/razor.jpeg" alt="Card image" style="height:600px;">
+    <img class="card-img-top" src="https://media.istockphoto.com/id/1248542684/vector/abstract-blurred-colorful-background.jpg?s=612x612&w=0&k=20&c=6aJX8oyUBsSBZFQUCJDP7KZ1y4vrf-wEH_SJsuq7B5I=" alt="Card image">
     <div class="card-img-overlay">
-      <h4 class="card-title">John Doe</h4>
-      <p class="card-text">Some example text.</p>
-      <a href="#" class="cardbtn btn btn-primary">Go To Something</a>
+      <h4 class="card-title">My Hobbies</h4>
+      <p class="card-text" id="cardSubTitle">These are the Things I Enjoy Doing</p>
+
+      <!-- Music List in BS Card-->
+      <p class="card-text musicListItems">Music</p>
+      <ul class="card-text">
+        <li class="musicListItems">MegaDeth</li>
+        <li class="musicListItems">Iron Maiden</li>
+        <li class="musicListItems">Queensryche</li>
+        <li class="musicListItems">Metallica</li>
+        <li class="musicListItems">Pantera</li>
+      </ul>
+
+      <!-- Second List in BS Card -->
+      <p class="card-text hobbiesList">Pass Time Activities</p>
+      <ul class="card-text">
+        <li class="hobbiesList">Playing Vidoe Games</li>
+        <li class="hobbiesList">Learning IT</li>
+        <li class="hobbiesList">Talking to My Close Friends</li>
+        <li class="hobbiesList">Trying New and Good Food</li>
+      </ul>
+
+
+      <a href="#" class="cardbtn btn btn-warning">Go To Something</a>
     </div>
   </div>
 <!-- partial -->

@@ -1,0 +1,15 @@
+#majorInfo {
+    position: absolute;
+    right: 20px;
+    width: 1000px;
+    padding-right: 20px;
+    border: 3px solid red;
+}
+
+#imgBox {
+    border: 3px solid blue;
+    position: absolute;
+    left: 20px;
+    width: 400px;
+    height: 300px;
+}

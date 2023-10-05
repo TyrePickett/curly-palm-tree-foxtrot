@@ -7,12 +7,13 @@ $(document).ready(function () {
     $("#coolFactsOutput").html();
     
 
-    let userNumber = $("#userNumber").val();
+    let userNumber = Number($("#userNumber").val());
     console.log("user number = ", userNumber);
     //let coolFactsOutput = generateCoolFacts(userNumber);
 
     $("#coolFactsOutput").html(number(userNumber));
-    $("#coolFactsOutputs").html(getCoolFact(userNumber));
+    $("#coolFactsOutputs").html(getPersonalFact(userNumber));
+    $('#coolFactsOutputs').css('color', 'red');
   });
 });
 
@@ -35,7 +36,7 @@ function number(userNumber) {
       return "I am from Ardmore, Alabama!";
     } else if (userNumber == 3) {
       return "My favorite video game is Skyrim!"
-    } else if (nuserNumber == 4) {
+    } else if (userNumber == 4) {
       return "I have yet to beat Elden Ring HAHAHA!";
     } else if (userNumber == 5) {
       return "My favorite college football team is Tennessee!";

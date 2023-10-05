@@ -105,3 +105,9 @@ html {
 .card-img-top {
     height: 600px;
 }
+
+.factGame {
+    position: absolute;
+    right: 500px;
+    top: 600px;
+}
